@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    .logo img{
+        height: 50px;
+        width: 50px;
+        border-radius: 8px;
+    }
+    .logo a{
+        display: flex;
+        gap: 20px;
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .logo a:hover{
+        opacity: 0.7;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    .Nav li{
+        display: inline;
+        padding: 10px;
+        font-size: 16px;
+
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        color: white;
+        width: 98%;
+        margin-left: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .Nav a{
+        text-decoration: none;
+        color: black;
+    }
+    .Nav a:hover{
+        opacity: 0.7;
+    }
+    .Nav button{
+        height: 45px;
+        width: 70px;
+        border-radius: 4px;
+        color: white;
+        background-color: rgb(5,147,119);
+        border: 5px solid rgb(5,147,119);
+        font-weight: 600;
+        font-size: 18px;
+        
+    }
+    .Nav button:hover{
+       
+       opacity: 0.9;
+    }
+    .but{
+        height: 50px;
+        width: 47%;
+        margin-left: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: whitesmoke;
+        border: none;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        text-align: left;
+    }
+    .but select{
+        height: 40px;
+        width: 130px;
+        border-radius: 8px;
+        background-color: whitesmoke;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        border: none;
+        outline: none;
+
+    }
+    .lin{
+        height: 30px;
+        width: 1px;
+        background-color: rgb(139, 132, 132);
+    }
+    .but input{
+        height: 45px;
+        width: 60%;
+        border: none;
+        background-color: whitesmoke;
+        outline: none;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        
+    }
+    .but i{
+        color: black;
+    }
+    .but i:hover{
+        color: green;
+        cursor: pointer;
+
+    }
+    .anch {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .anch a{
+        text-decoration: none;
+        color:rgb(82, 82, 78) ;
+        padding: 20px;
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .anch a:hover{
+        color: black;
+    }
+    hr{
+       
+        border: 1px solid rgb(211, 209, 209);
+    }
+    .text{
+        text-align: center;
+        margin-top: 60px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #2c343e;
+        line-height: 20px;
+    }
+    .div1{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        
+    }
+    .d1{
+        height: 400px;
+        width: 40%;
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        margin-left: 50px;
+    }
+    .d1 a{
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+    }
+    .d1 a:hover{
+        opacity: 0.8;
+    }
+    .d2{
+        height: 400px;
+        width: 40%;
+        align-items: center;
+        text-align: center;
+    }
+    .lef{
+        height: 400px;
+        width: 270px;
+
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .lef img{
+        height: 400px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .rig{
+        height: 400px;
+        width: 225px;
+    }
+    .up{
+        height: 220px;
+        width: 100%;
+        border-top-right-radius: 20px;
+    }
+    .up img{
+        height: 220px;
+        width: 100%;
+        border-top-right-radius: 20px;
+    }
+    .dow{
+        height: 170px;
+        margin-top: 10px;
+        width: 100%;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+        font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+        
+    }
+    .dow img{
+        height: 170px;
+        width: 18%;
+        border-bottom-right-radius: 20px;
+        position: absolute;
+    }
+    .d2 h1{
+        font-size: 50px;
+        font-weight: 400;
+        font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+    }
+    .d2 p{
+        width: 78%;
+        margin-top: -30px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+    }
+    .d2 button{
+        padding: 13px;
+        width: 200px;
+        background-color: black;
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+        border: 1px solid black;
+        margin-right: 20px;
+        border-radius: 3px;
+        margin-left: -40px;
+        margin-top: 5px;
+        
+    }
+    .d2 button:hover{
+        background-color: transparent;
+        color: black;
+    }
+    .d2 label{
+        font-weight: 600;
+        color: #2c343e;
+    }
+    .d2fl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 80px;
+    }
+    .d2r p{
+        width: 60%;
+        margin-top: 20px;
+        padding-left: 70px;
+        text-align: left;
+    }
+    .d2fl h2{
+        color: #2c343e;
+    }
+    .div2fl{
+        display: flex;
+        justify-content: center;
+    }
+    .div2{
+        height: 130px;
+        margin-top: 90px;
+        border-radius: 6px;
+        width: 75%;
+        border: 1px solid rgb(192, 187, 187);
+        
+    }
+    .div2 h1{
+        font-size: 37px;
+        margin-left: 50px;
+        font-weight: 600;
+        font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif; 
+        color: #2c343e;
+    }
+    .div2 p{
+        margin-left: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+        margin-top: -40px;
+        color: #2c343e;
+    }
+    .div2 button{
+        padding: 13px;
+        width: 200px;
+        background-color: black;
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+        border: 1px solid black;
+        border-radius: 3px;
+        margin-left: 40%;
+        
+    }
+    .div2 button:hover{
+        background-color: transparent;
+        color: black;
+    }
+    .div3{
+        background-color: black;
+    }
+    .dt{
+        padding-top: 40px;
+        color: white;
+        
+    }
+    .dt h1{
+        font-weight: 400;
+    }
+    .d2upt{
+        
+        position: relative;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        
+        
+    }
+    .d2upt h1{
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    .d2upt p{
+        margin-top: -18px;
+        font-weight: 300;
+        font-size: 20px;
+    }
+  .div3t h1{
+    color: white;
+    width: 70%;
+    text-align: left;
+    margin-left: 70px;
+  }
+  .div3t p{
+    color: white;
+    width: 88%;
+    text-align: left;
+    margin-left: 70px;
+  }
+  .div3t a{
+    text-decoration: none;
+  }
+  .div3t h1:hover{
+    color: #96989b;
+  }
+  .div3t p:hover{
+    color: #96989b;
+  }
+  .div3t button{
+    background-color: white;
+    color: black;
+    margin-left: -45%;
+    cursor: pointer;
+    width: 120px;
+  }
+  .div3t button:hover{
+    background-color: white;
+    color: black;
+  }
+  .dmt{
+    margin-top: 80px;
+  }
+</style>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="">
+                <img src="/img/images.jpg" alt="">
+                <h3>Pexels</h3>
+            </a>
+        </div>
+        <div  class="but">
+            <div class="bts">
+                <select >
+                    <option >
+                        <i class="fa-regular fa-image"></i>
+                        <h3>Photos</h3>
+                    </option>
+                    <option >
+                        <img src="/img/fl.jpg" alt="">
+                        <h3>Videos</h3>
+                    </option>
+                    
+                </select>
+                
+            </div>
+            <div class="lin"></div>
+            <input type="search" placeholder="search For Free Photos">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+        <div class="Nav">
+           <ul>
+            <li><a href="">Explore</a></li>
+            <li><a href="">License</a></li>
+            <li><a href="">Upload</a></li>
+            <li><a href="">...</a></li>
+            <li><a href=""><Button>Join</Button></a></li>
+           </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="anch">
+        <a href="">Home</a>
+        <a href="">Videos</a>
+        <a href="" >Leaderboard</a>
+        <a href="" style="background-color: black; color: white;">Challenges</a>
+    </div>
+    <div class="text">
+        <h1>Challenges</h1>
+    </div>
+    <div class="div1">
+        <div class="d1">
+            <a href="">
+                <div class="lef">
+                    <img src="/img/fem7.jpg" alt="">
+                </div>
+                <div class="rig">
+                <div class="up"><img src="/img/l2 e.jpeg" alt=""></div>
+                <div class="dow">
+                    <img src="/img/l2 g.jpeg" alt="">
+                    <div class="d2upt">
+                        <h1>+6.1k</h1>
+                        <p>See all photos></p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="d2">
+            <h1>Video Challenge</h1>
+            <p>Submit your best videos!</p>
+            <button>Join the challenge</button><i class="fa-solid fa-rotate-right"></i>
+            <label for=""> 5 days</label>
+            <div class="d2fl">
+                <div class="d2l">
+                    <h2>Presented by</h2>
+                    <div class="logo">
+                        <a href="">
+                            <img src="/img/images.jpg" alt="">
+                            <h3>Pexels</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="d2r">
+                    <h2>Prize</h2>
+                    <p>$100 or $50 USD Cash Prize</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div2fl">
+        <div class="div2">
+            <h1>Partner with Pexels <button>Sponsor a Challenge</button></h1>
+            <p>We love teaming up with other brands. Here’s how you can work with us. </p>
+        </div>
+    </div>
+    <div class="div3">
+        <div class="text dt">
+            <h1>Past Challenges</h1>
+        </div>
+        <div class="div1">
+            <div class="d1">
+                <a href="">
+                    <div class="lef">
+                        <img src="/img/fem7.jpg" alt="">
+                    </div>
+                    <div class="rig">
+                    <div class="up"><img src="/img/l2 e.jpeg" alt=""></div>
+                    <div class="dow">
+                        <img src="/img/l2 g.jpeg" alt="">
+                        <div class="d2upt">
+                            <h1>+16.7k</h1>
+                            <p>See all photos></p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="d2 div3t">
+                <a href=""><h1>Homepage Challenge: Pink</h1></a>
+                <a href=""><p>Submit your best photos and videos featuring the color pink!</p></a>
+                <button>Close</button>
+                
+                
+            </div>
+        </div>
+        <div class="div1 dmt">
+            <div class="d1">
+                <a href="">
+                    <div class="lef">
+                        <img src="/img/fem7.jpg" alt="">
+                    </div>
+                    <div class="rig">
+                    <div class="up"><img src="/img/l2 e.jpeg" alt=""></div>
+                    <div class="dow">
+                        <img src="/img/l2 g.jpeg" alt="">
+                        <div class="d2upt">
+                            <h1>+18k</h1>
+                            <p>See all photos></p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="d2 div3t">
+                <a href=""><h1>Homepage Challenge: Red</h1></a>
+                <a href=""><p>Submit your best photos and videos featuring the colorred!</p></a>
+                <button>Close</button>
+                
+                
+            </div>
+        </div>
+        <div class="div1 dmt">
+            <div class="d1">
+                <a href="">
+                    <div class="lef">
+                        <img src="/img/fem7.jpg" alt="">
+                    </div>
+                    <div class="rig">
+                    <div class="up"><img src="/img/l2 e.jpeg" alt=""></div>
+                    <div class="dow">
+                        <img src="/img/l2 g.jpeg" alt="">
+                        <div class="d2upt">
+                            <h1>+18.6k</h1>
+                            <p>See all photos></p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="d2 div3t">
+                <a href=""><h1>Snaps of wellness</h1></a>
+                <a href=""><p>Submit your best photos and videos featuring acts of wellnes!</p></a>
+                <button>Close</button>
+                
+                
+            </div>
+        </div>
+        <div class="div1 dmt">
+            <div class="d1">
+                <a href="">
+                    <div class="lef">
+                        <img src="/img/fem7.jpg" alt="">
+                    </div>
+                    <div class="rig">
+                    <div class="up"><img src="/img/l2 e.jpeg" alt=""></div>
+                    <div class="dow">
+                        <img src="/img/l2 g.jpeg" alt="">
+                        <div class="d2upt">
+                            <h1>+16.6k</h1>
+                            <p>See all photos></p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="d2 div3t">
+                <a href=""><h1>Homepage Challenge: Yellow</h1></a>
+                <a href=""><p>Submit your best photos and videos featuring the color yellow!</p></a>
+                <button>Close</button>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

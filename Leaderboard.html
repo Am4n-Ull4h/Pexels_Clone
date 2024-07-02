@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    .logo img{
+        height: 50px;
+        width: 50px;
+        border-radius: 8px;
+    }
+    .logo a{
+        display: flex;
+        gap: 20px;
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .logo a:hover{
+        opacity: 0.7;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    .Nav li{
+        display: inline;
+        padding: 10px;
+        font-size: 16px;
+
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        color: white;
+        width: 98%;
+        margin-left: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .Nav a{
+        text-decoration: none;
+        color: black;
+    }
+    .Nav a:hover{
+        opacity: 0.7;
+    }
+    .Nav button{
+        height: 45px;
+        width: 70px;
+        border-radius: 4px;
+        color: white;
+        background-color: rgb(5,147,119);
+        border: 5px solid rgb(5,147,119);
+        font-weight: 600;
+        font-size: 18px;
+        
+    }
+    .Nav button:hover{
+       
+       opacity: 0.9;
+    }
+    .but{
+        height: 50px;
+        width: 47%;
+        margin-left: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: whitesmoke;
+        border: none;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        text-align: left;
+    }
+    .but select{
+        height: 40px;
+        width: 130px;
+        border-radius: 8px;
+        background-color: whitesmoke;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        border: none;
+        outline: none;
+
+    }
+    .lin{
+        height: 30px;
+        width: 1px;
+        background-color: rgb(139, 132, 132);
+    }
+    .but input{
+        height: 45px;
+        width: 60%;
+        border: none;
+        background-color: whitesmoke;
+        outline: none;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        
+    }
+    .but i{
+        color: black;
+    }
+    .but i:hover{
+        color: green;
+        cursor: pointer;
+
+    }
+    .anch {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .anch a{
+        text-decoration: none;
+        color:rgb(82, 82, 78) ;
+        padding: 20px;
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .anch a:hover{
+        color: black;
+    }
+    hr{
+       
+        border: 1px solid rgb(211, 209, 209);
+    }
+    .text{
+        text-align: center;
+        margin-top: 80px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #2c343e;
+        line-height: 20px;
+    }
+    .last{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .clrb{
+        width: 130px;
+        height: 50px;
+        background-color: black;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .clrb a{
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        
+    }
+    .sim a{
+        text-decoration: none;
+        color: rgb(82, 80, 80);
+        padding: 20px;
+        font-size: 17px;
+        font-weight: 600;
+        
+    }
+    .d1{
+        display: flex;
+    }
+    .ps{
+        width: 30%; 
+        display: flex;  
+        align-items: center;
+        margin-top: -20px;
+    }
+    .ps h1{
+        font-size: 55px;
+        margin-left: 20px;
+        font-weight: 400;
+        color: rgb(44,52,62);
+        font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+    }
+    .ps img{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin-left: 35px;
+
+    }
+    .ps img:hover{
+        opacity: 0.8;
+    }
+    .data{
+        margin-left: 20px;
+        margin-top: 30px;
+        font-family: sans-serif;
+        color: rgb(44,52,62);
+    }
+    .data h2{
+        font-size: 20px;
+    }
+    .data h4{
+        margin-top: -18px;
+        font-weight: 300;
+    }
+    .data i{
+        border: 1px solid rgb(170, 170, 170);
+        padding: 15px;
+        color: rgb(112, 114, 116);
+        border-radius: 50%;
+    }
+    .data i:hover{
+        border: 1px solid rgb(61, 60, 60);
+    }
+    .ims{
+        width: 70%;
+        height:180px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .ims1{
+        height: 180px;
+        width: 23%;
+        background-color: black;
+        border-radius: 20px;
+    }
+    .ims a{
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        font-size: 25px;
+        gap: 23px;
+    }
+
+    .ims a:hover{
+        opacity: 0.9;
+    }
+    .ims1 img{
+        height: 180px;
+        width: 200px;
+        border-radius: 20px;
+        
+    }
+    .im2{
+        margin-top: 50px;
+    }
+    .imch img{
+        position: absolute;
+        height: 180px;
+        width: 16%;
+    }
+    .imt{
+        position: relative;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        
+    }
+    
+</style>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="">
+                <img src="/img/images.jpg" alt="">
+                <h3>Pexels</h3>
+            </a>
+        </div>
+        <div  class="but">
+            <div class="bts">
+                <select >
+                    <option >
+                        <i class="fa-regular fa-image"></i>
+                        <h3>Photos</h3>
+                    </option>
+                    <option >
+                        <img src="/img/fl.jpg" alt="">
+                        <h3>Videos</h3>
+                    </option>
+                    
+                </select>
+                
+            </div>
+            <div class="lin"></div>
+            <input type="search" placeholder="search For Free Photos">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+        <div class="Nav">
+           <ul>
+            <li><a href="">Explore</a></li>
+            <li><a href="">License</a></li>
+            <li><a href="">Upload</a></li>
+            <li><a href="">...</a></li>
+            <li><a href=""><Button>Join</Button></a></li>
+           </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="anch">
+        <a href="">Home</a>
+        <a href="">Videos</a>
+        <a href="" style="background-color: black; color: white;">Leaderboard</a>
+        <a href="">Challenges</a>
+    </div>
+    <div class="text">
+        <h1>Leaderboard</h1>
+        <p>Users with the most views of photos uploaded in the last 30 days.</p>
+    </div>
+    <div class="last">
+        <div class="clrb"><a href="">Last 30 Days</a></div>
+        <div class="sim"><a href="">All Time</a></div>
+    </div>
+    <div class="Dimg">
+        <div class="d1">
+            <div class="ps">
+                <h1>1</h1>
+                <a href=""><img src="/img/man2.jpg" alt=""></a>
+                <div class="data">
+                    <h2>Carlo Obrien</h2>
+                    <h4>11.5M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    
+                </div>
+            </div>
+            <div class="ims">
+                <!-- <div class="ims1">
+                    <a href=""><img src="/img/fem3.jpg" alt=""></a>
+                </div>
+                <div class="ims1">
+                    <a href=""><img src="/img/fem3.jpg" alt=""></a>
+                </div>
+                <div class="ims1">
+                    <a href=""><img src="/img/fem3.jpg" alt=""></a>
+                </div>
+                <div class="ims1">
+                    <a href=""><img src="/img/fem3.jpg" alt=""></a>
+                </div> -->
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem6.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem9.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem4.jpg" alt="">
+                        <div class="imt">
+                            <h2>+96</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>2</h1>
+                <a href=""><img src="/img/fem1.jpg" alt=""></a>
+                <div class="data">
+                    <h2>Luana Freitas</h2>
+                    <h4>11.1M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem1.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem5.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem2.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem7.jpg" alt="">
+                        <div class="imt">
+                            <h2>+560</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>3</h1>
+                <a href=""><img src="/img/fem8.jpg" alt=""></a>
+                <div class="data">
+                    <h2>Eugenia Remark</h2>
+                    <h4>9.5M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem4.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem8.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem2.jpg" alt="">
+                        <div class="imt">
+                            <h2>+585</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>4</h1>
+                <a href=""><img src="/img/pexels-photo-14589752.jpeg" alt=""></a>
+                <div class="data">
+                    <h2>Efe Esroy</h2>
+                    <h4>7.4M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+171</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>5</h1>
+                <a href=""><img src="/img/man9.jpg" alt=""></a>
+                <div class="data">
+                    <h2>Arturas Kokorevas</h2>
+                    <h4>4.9M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+823</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>6</h1>
+                <a href=""><img src="/img/pexels-photo-14764384.jpeg" alt=""></a>
+                <div class="data">
+                    <h2>Isil Agc</h2>
+                    <h4>4.7M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+951</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>7</h1>
+                <a href=""><img src="/img/pexels-photo-14236713.jpeg" alt=""></a>
+                <div class="data">
+                    <h2>Nina Guler</h2>
+                    <h4>4.6M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+346</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>8</h1>
+                <a href=""><img src="/img/fem5.jpg" alt=""></a>
+                <div class="data">
+                    <h2>Alina Kzazka</h2>
+                    <h4>4.3M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+597</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>9</h1>
+                <a href=""><img src="/img/fem4.jpg" alt=""></a>
+                <div class="data">
+                    <h2>Beza Yurtkuran</h2>
+                    <h4>4.2M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+340</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>10</h1>
+                <a href=""><img src="/img/l1b.jpeg" alt=""></a>
+                <div class="data">
+                    <h2>The Earthy Jay</h2>
+                    <h4>3.4M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+213</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>11</h1>
+                <a href=""><img src="/img/fem9.jpg" alt=""></a>
+                <div class="data">
+                    <h2>ALINA MATVEYCH</h2>
+                    <h4>3.3M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+1.7k</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>12</h1>
+                <a href=""><img src="/img/fem7.jpg" alt=""></a>
+                <div class="data">
+                    <h2>Jenny Mavimiro</h2>
+                    <h4>3.2M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+186</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d1 im2">
+            <div class="ps">
+                <h1>13</h1>
+                <a href=""><img src="/img/fem2.jpg" alt=""></a>
+                <div class="data">
+                    <h2>Elena Rubtsova</h2>
+                    <h4>3.1M Views</h4>
+                    <a href=""><i class="fa-solid fa-user-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="ims">
+                <a href="">
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1">
+                        <img src="/img/fem3.jpg" alt="">
+                    </div>
+                    <div class="ims1 imch">
+                        <img src="/img/fem3.jpg" alt="">
+                        <div class="imt">
+                            <h2>+325</h2>
+                            <h4>See ll Media></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
